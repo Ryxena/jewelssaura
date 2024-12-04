@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-image">
+            <img src="jewelry.jpg" alt="Jewelry">
+        </div>
+        <div class="login-form">
+        <h2>User Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Mencegah reload halaman
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Validasi sederhana (contoh hardcoded)
+      if (username === "user" && password === "12345") {
+        alert("Login Berhasil!");
+        window.location.href = "Website.figma.html"; // Pindah ke halaman Home
+      } else {
+        alert("Username atau Password salah!");
+      }
+    });
+  </script>
+</body>
+</html>
