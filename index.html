@@ -1,99 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
-    <link rel="stylesheet" href="figma.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style/figma.css" />
+  </head>
+  <body>
     <header class="main-header">
-        <div class="logo">
-            <img src="Logo.jpg" alt="logo">
-        </div>
-        <nav class="navbar">
-            <a href="#" class="nav-button">HOME</a>
-            <a href="#" class="nav-button">JEWELRY</a>
-            <a href="#" class="nav-button">CONTACT</a>
-            <a href="#" class="nav-button">SHOPPING BAG</a>
-            <a href="login.html" class="nav-button login-button">LOGIN</a>
-        </nav>
+      <div class="logo">
+        <img src="./assets/images/Logo.jpg" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <a href="#" class="nav-button">HOME</a>
+        <a href="#" class="nav-button">JEWELRY</a>
+        <a href="#" class="nav-button">CONTACT</a>
+        <a href="#" class="nav-button cart">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path
+              d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+          </svg>
+        </a>
+        <a href="login.html" class="nav-button login-button">LOGIN</a>
+      </nav>
     </header>
-    
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Shine With Us!</h1>
-                    <button>SHOP NOW</button>
-                </div>
-                <img src="img1.jpg" alt="Hands with jewelry">
-            </div>
-        </section>   
-        <section class="products">
-            <h2>NEW ARRIVALS</h2>
-            <button>VIEW ALL</button>
-            <div class="product-grid">
-                <img src="ring2.jpg" alt="RING 1">
-                <img src="neckles1.jpg" alt="necklaces 2">
-                <img src="bracelets1.jpg" alt="Bracelet 3">
-                <img src="neckles2.jpg" alt="necklaces 4">
-            </div>
-        </section> 
-        <section class="charm-necklace">
-            <div class="charm-content">
-                <img src="model.jpg" alt="Woman wearing a neckleace">
-                <div>
-                    <h2>CHARM NECKLACE!</h2>
-                    <p>Create your perfect necklace! Choose from our cute charms, pick your favorite necklace, and we'll put it all together for you. Whether it's a gift or a treat for yourself, your custom creation is uniquely yours.</p>
-                </div>
-            </div>
-        </section>  
-        <section class="our-collection">
-            <h2>OUR COLLECTION</h2>
-            <p>Our store offers a beautiful collection of bracelets, necklaces, and rings. Find the perfect piece to match your style or gift to someone special!</p> 
-            <div class="collection-items">
-                <div class="item">
-                    <h3>Bracelets</h3>   
-                    <img src="bracelets2.jpg" alt="Bracelet">
-                </div>
-                <div class="item">
-                    <h3>Necklace</h3>
-                    <img src="neckles3.jpg" alt="Necklace">
-                </div>
-                <div class="item">
-                    <h3>Rings</h3>
-                    <a href="product.html">
-                        <img src="ring3.jpg" alt="Ring">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <div class="location-section">
-            <h2>Location</h2>
-            <p>Besides shopping on this website, you can also shop by visiting our offline store</p>
-            <div class="location-content">
-                <img src="toko.jpg" alt="Store Interior">
-                <img src="lokasi.jpg" alt="Map Location">
-            </div>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Shine With Us!</h1>
+            <button>SHOP NOW</button>
+          </div>
+          <img src="./assets/images/img1.jpg" alt="Hands with jewelry" />
         </div>
-        <div class="review-section">
-            <h2>Review</h2>
-            <div class="reviews">
-                <div class="review-card">
-                    <img src="jennifer.jpg" alt="Jennifer">
-                    <h3>Jennifer</h3>
-                    <p>★★★★★</p>
-                    <p>Pelayanannya ramah dan profesional, koleksi perhiasannya elegan dan berkualitas. Sangat puas berbelanja di sini!</p>
-                </div>
-                <div class="review-card">
-                    <img src="primilly.jpg" alt="Primilly">
-                    <h3>Primilly</h3>
-                    <p>★★★★★</p>
-                    <p>Beautiful jewelry and very helpful staff! The whole shopping experience was smooth and enjoyable. Will come back for sure.</p>
-                </div>
-            </div>
+      </section>
+      <section class="products">
+        <h2>NEW ARRIVALS</h2>
+        <button>VIEW ALL</button>
+        <div class="product-grid">
+          <a href="">
+            <img src="./assets/images/ring2.jpg" alt="RING 1" />
+          </a>
+          <a href="">
+            <img src="./assets/images/neckles1.jpg" alt="necklaces 2" />
+          </a>
+          <a href="">
+            <img src="./assets/images/bracelets1.jpg" alt="Bracelet 3" />
+          </a>
+          <a href="">
+            <img src="./assets/images/neckles2.jpg" alt="necklaces 4" />
+          </a>
         </div>
+      </section>
+      <section class="charm-necklace">
+        <div class="charm-content">
+          <img
+            src="./assets/images/model.jpg"
+            alt="Woman wearing a neckleace" />
+          <div>
+            <h2>CHARM NECKLACE!</h2>
+            <p>
+              Create your perfect necklace! Choose from our cute charms, pick
+              your favorite necklace, and we'll put it all together for you.
+              Whether it's a gift or a treat for yourself, your custom creation
+              is uniquely yours.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="our-collection">
+        <h2>OUR COLLECTION</h2>
+        <p>
+          Our store offers a beautiful collection of bracelets, necklaces, and
+          rings. Find the perfect piece to match your style or gift to someone
+          special!
+        </p>
+        <div class="collection-items">
+          <div class="item">
+            <h3>Bracelets</h3>
+            <a href="product.html"
+              ><img src="./assets/images/bracelets2.jpg" alt="Bracelet"
+            /></a>
+          </div>
+          <div class="item">
+            <h3>Necklace</h3>
+            <a href="product.html">
+              <img src="./assets/images/neckles3.jpg" alt="Necklace"
+            /></a>
+          </div>
+          <div class="item">
+            <h3>Rings</h3>
+            <a href="product.html">
+              <img src="./assets/images/ring3.jpg" alt="Ring" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="location-section">
+        <h2>Location</h2>
+        <p>
+          Besides shopping on this website, you can also shop by visiting our
+          offline store
+        </p>
+        <div class="location-content">
+          <img src="./assets/images/toko.jpg" alt="Store Interior" />
+          <img src="./assets/images/lokasi.jpg" alt="Map Location" />
+        </div>
+      </div>
+      <div class="review-section">
+        <h2>Review</h2>
+        <div class="reviews">
+          <div class="review-card">
+            <img src="./assets/images/jennifer.jpg" alt="Jennifer" />
+            <h3>Jennifer</h3>
+            <p>★★★★★</p>
+            <p>
+              Pelayanannya ramah dan profesional, koleksi perhiasannya elegan
+              dan berkualitas. Sangat puas berbelanja di sini!
+            </p>
+          </div>
+          <div class="review-card">
+            <img src="./assets/images/primilly.jpg" alt="Primilly" />
+            <h3>Primilly</h3>
+            <p>★★★★★</p>
+            <p>
+              Beautiful jewelry and very helpful staff! The whole shopping
+              experience was smooth and enjoyable. Will come back for sure.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
